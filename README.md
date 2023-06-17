@@ -4,7 +4,24 @@ A LangChain powered LLM model that provides you a summary, interesting facts, to
 ## Working:
 Getting Results for **Harrison Chase, founder & CEO - Langchain.**
 
+Input:
+
+`name = "Harrison Chase"`
+
 Prompt:
+
+```
+
+    summary_template = """
+        given the Linkedin information {information} about a person, i want you to create:
+        1. a short summary
+        2. an interesting fact about them
+        3. A potential topic of interest. keep it short.
+        4. 1 creative ice-breaker to open a conversation with them.
+        """
+```
+
+Passing the `linkedin_profile_url` as the input here to the `{information}` placeholder.
 
 
 
