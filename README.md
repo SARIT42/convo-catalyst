@@ -8,7 +8,7 @@ Getting Results for **Harrison Chase, founder & CEO - Langchain.**
 
 `name = "Harrison Chase"`
 
-> Note: If the model does not scrape the profile of another person with same name rather than the person you are looking for : Try providing a bit of unique detail into the name. For eg:
+> Note: If the model scrapes the profile of another person with same name rather than the person you are looking for : Try providing a bit of unique detail into the name. For eg:
 > 
 > if "Harrison Chase" does not get you desired results , try something like "Harrison Chase LangChain" 
 
