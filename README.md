@@ -16,6 +16,8 @@ Getting Results for **Harrison Chase, founder & CEO - Langchain.**
 
 Given name of person, use lookup agent with the help of the tool `get_profile_url()` (SerpAPI) to find out the person's `linkedin_profile_url`. All this powered by our llm model.
 
+LLM Model being used is **gpt-3.5-turbo** from the OPENAI API.
+
 Passing the `linkedin_profile_url` as the input down here to the `{information}` placeholder as prompt template to our langchain powered llm model.
 
 
