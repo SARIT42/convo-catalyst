@@ -94,3 +94,18 @@ run the icebreaker.py file.
 ```bash
   pipenv run app.py
 ```
+
+
+## Twitter Scraping.
+
+Getting the following error:
+
+`tweepy.errors.Forbidden: 403 Forbidden When authenticating requests to the Twitter API v2 endpoints, you must use keys and tokens from a Twitter developer App that is attached to a Project. You can create a project via the developer portal.`
+
+which to my knowledge, as i figured out was because of some twitter api policy changes applicable to certain regions/countries. So nothing much can be done on the developer side ig. 
+
+This halts the twitter account information scraping but the implementation code for the `twitter_lookup_agent` and the tweets processing in `twitter.py` has been provided in the respective sections. 
+
+Any help in resolving the above issue is highly appreciated. 
+
+
