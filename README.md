@@ -1,14 +1,23 @@
-# ConvoCatalyst : Linguistic Profile Scraper & Ice-breaker
+# ConvoCatalyst : LinkedIn Insights & Ice-breakers
 A LangChain powered LLM model that provides you a summary, interesting facts, topics of interest and an ice-breaker to help start a conversation with a person by scraping their LinkedIn profile (and Twitter profile ?).
 
 ## Working:
 Getting Results for **Harrison Chase, founder & CEO - Langchain.**
 
-Input:
+### Input:
 
 `name = "Harrison Chase"`
 
-Prompt:
+> Note: If the model does not scrape the profile of another person with same name rather than the person you are looking for : Try providing a bit of unique detail into the name. For eg:
+> 
+> if "Harrison Chase" does not get you desired results , try something like "Harrison Chase LangChain" 
+
+### Scraping and Prompt:
+
+Given name of person, use lookup agent with the help of the tool `get_profile_url()` (SerpAPI) to find out the person's `linkedin_profile_url`.
+
+Passing the `linkedin_profile_url` as the input down here to the `{information}` placeholder as prompt template to our langchain powered llm model.
+
 
 ```
 
@@ -16,16 +25,20 @@ Prompt:
         given the Linkedin information {information} about a person, i want you to create:
         1. a short summary
         2. an interesting fact about them
-        3. A potential topic of interest. keep it short.
+        3. A potential topic of interest. Keep it short.
         4. 1 creative ice-breaker to open a conversation with them.
         """
 ```
 
-Passing the `linkedin_profile_url` as the input here to the `{information}` placeholder.
 
+### Result: 
 
+![image](https://github.com/SARIT42/convo-catalyst/assets/77446629/d140a89a-197c-4d1c-8d7d-a507c848b757)
 
-Result: 
+The most interesting and mindblowing thing here is the demonstration of the thought process of the **agent** which basically acts as a brain to the model for the steps it needs to take to reach desired output. 
+
+Also, the results seemed pretty convincing! LangChain is cool! 
+
 
 
 
