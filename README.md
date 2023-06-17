@@ -14,7 +14,7 @@ Getting Results for **Harrison Chase, founder & CEO - Langchain.**
 
 ### Scraping and Prompt:
 
-Given name of person, use lookup agent with the help of the tool `get_profile_url()` (SerpAPI) to find out the person's `linkedin_profile_url`.
+Given name of person, use lookup agent with the help of the tool `get_profile_url()` (SerpAPI) to find out the person's `linkedin_profile_url`. All this powered by our llm model.
 
 Passing the `linkedin_profile_url` as the input down here to the `{information}` placeholder as prompt template to our langchain powered llm model.
 
